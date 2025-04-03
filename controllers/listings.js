@@ -72,5 +72,5 @@ module.exports.showListing = async (req , res , next) =>{
         req.flash("error" , "Listing Does Not Exist");
         res.redirect("/listings");
     }
-    res.render("listings/Show.ejs" , {Listing});
+    res.render("listings/show.ejs" , {Listing});
 }
